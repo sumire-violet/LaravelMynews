@@ -15,4 +15,3 @@
 @extends('profile.blade')
 {{-- profile.blade.phpの@yield('title')に'MYプロフィール'を埋め込む --}}
 @section('title', 'MYプロフィール')
-@endsection
