@@ -19,7 +19,7 @@
 <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>MYプロフィール</h2>
+                <h2>プロフィール作成画面</h2>
             </div>
         </div>
     </div>
