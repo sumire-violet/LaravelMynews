@@ -12,3 +12,5 @@
 @extends('layouts.profile')
 {{-- profile.blade.phpの@yield('title')に'MYプロフィール'を埋め込む --}}
 @section('title', 'MYプロフィール')
+@section('content')
+@endsection
