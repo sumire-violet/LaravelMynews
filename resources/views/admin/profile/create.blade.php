@@ -11,7 +11,7 @@
         <h1>プロフィール作成画面</h1>
     </body>
 </html>
-{{-- profile/plofile.blade.phpを読み込む --}}
-@extends('profile.profile')
+{{-- layouts/plofile.blade.phpを読み込む --}}
+@extends('layouts.profile')
 {{-- profile.blade.phpの@yield('title')に'MYプロフィール'を埋め込む --}}
 @section('title', 'MYプロフィール')
