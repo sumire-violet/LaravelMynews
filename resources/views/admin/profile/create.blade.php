@@ -12,6 +12,6 @@
     </body>
 </html>
 {{-- profile/plofile.blade.phpを読み込む --}}
-@extends('profile.blade')
+@extends('profile.profile')
 {{-- profile.blade.phpの@yield('title')に'MYプロフィール'を埋め込む --}}
 @section('title', 'MYプロフィール')
