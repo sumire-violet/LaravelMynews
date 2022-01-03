@@ -20,7 +20,10 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::get('profile/create','Admin\ProfileController@add');
     Route::post('plofile/create','Admin\ProfileController@create'); #22章追記
     Route::get('profile/edit','Admin\ProfileController@edit');
-    Route::post('profile/edit','Admin\ProfileController@update'); #22章追記
+    Route::post('profile/edit','Admin\ProfileController@update'); #22章追
+    Route::get('news', 'Admin\NewsController@index'); // 追記
+    Route::get('news/edit', 'Admin\NewsController@edit')->middleware('auth'); // 26章追記
+    Route::post('news/edit', 'Admin\NewsController@update')->middleware('auth'); // 26章追記
 });
 Route::get('/XXX','Admin\AAAController@bbb');
 
