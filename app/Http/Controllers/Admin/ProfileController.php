@@ -21,11 +21,11 @@ class ProfileController extends Controller
     {
       // Varidationを行う
       $this->validate($request, Profiles::$rules);
-      $profiles = new Profiles;
+      $profile = new Profiles;
       $form = $request->all();
       // データベースに保存する
-      $profiles->fill($form);
-      $profiles->save();
+      $profile->fill($form);
+      $profile->save();
     //admin/profile/createにリダイレクトする
         return redirect('admin/profile/create');
     }
@@ -64,4 +64,12 @@ class ProfileController extends Controller
 
       return redirect('admin/profile/');
     }
+    public function delete(Request $request)
+  {
+      // 該当するNews Modelを取得
+      $profile = Profiles::find($request->id);
+      // 削除する
+      $profile->delete();
+      return redirect('admin/profile/');
+  }  
 }
