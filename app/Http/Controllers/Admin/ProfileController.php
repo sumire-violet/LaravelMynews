@@ -27,7 +27,7 @@ class ProfileController extends Controller
       $profile->fill($form);
       $profile->save();
     //admin/profile/createにリダイレクトする
-        return redirect('admin/profile/create');
+        return redirect('admin/profile/');
     }
     public function index(Request $request)
     {
