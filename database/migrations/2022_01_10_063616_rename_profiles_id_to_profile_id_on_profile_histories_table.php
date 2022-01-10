@@ -25,7 +25,7 @@ class RenameProfilesIdToProfileIdOnProfileHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::table('profile_histories2', function (Blueprint $table) {
+        Schema::table('profile_histories', function (Blueprint $table) {
             //
         });
     }
