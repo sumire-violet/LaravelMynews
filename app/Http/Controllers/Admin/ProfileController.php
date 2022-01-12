@@ -59,7 +59,7 @@ class ProfileController extends Controller
       
       $history = new ProfileHistory();
       $history->profile_id = $profile->id;
-      $history->edited_at = Carbon::now();
+      $history->edited_at = Carbon::now('Asia/Tokyo');
       $history->save();
 
       return redirect('admin/profile/');
