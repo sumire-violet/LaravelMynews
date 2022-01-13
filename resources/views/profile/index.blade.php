@@ -10,7 +10,7 @@
                         <div class="col-md-6">
                             <div class="caption mx-auto">
                                 <div class="title p-2">
-                                    <p>テスト</p>
+                                    <p>テストテストテスト</p>
                                     <h1>{{ str_limit($headline->name, 20) }}</h1>
                                 </div>
                             </div>
